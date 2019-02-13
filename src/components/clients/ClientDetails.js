@@ -30,7 +30,7 @@ class ClientDetails extends Component {
         firestore.update({ collection: 'clients', doc: client.id }, clientUpdate);
 
         //hide form after update
-        this.state.showBalanceUpdate = false;
+        this.setState({ showBalanceUpdate: true });
     };
 
     //delete client
